@@ -6,12 +6,6 @@ def add(a, b):
         raise TypeError("Arguments must be numbers")
     return a + b
 
-def add(a, b):
-    """Add two numbers."""
-    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
-        raise TypeError("Arguments must be numbers")
-    return a + b + 1  # Add +1 to break tests
-
 def multiply(a, b):
     """Multiply two numbers."""
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
