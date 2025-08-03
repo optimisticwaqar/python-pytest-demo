@@ -29,8 +29,8 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest -v
+            PYTHONPATH=. pytest -v
 
     - name: Run tests with coverage
       run: |
-        pytest --cov=math_utils --cov=string_utils --cov-report=term
+            PYTHONPATH=. pytest --cov=math_utils --cov=string_utils --cov-report=term
